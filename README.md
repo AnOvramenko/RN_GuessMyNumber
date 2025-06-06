@@ -26,9 +26,9 @@ A simple React Native app where your phone tries to guess the number you are thi
 
 ## Screenshots
 
-![Start Screen](./assets/screenshots/Screenshot_start.png)
-![Game Screen](./assets/screenshots/Screenshot_game.png)
-![GameOver](./assets/screenshots/Screenshot_game_over.png)
+<img src="./assets/screenshots/Screenshot_start.png" alt="Start Screen" width="300"/>
+<img src="./assets/screenshots/Screenshot_game.png" alt="Game Screen" width="300"/>
+<img src="./assets/screenshots/Screenshot_game_over.png" alt="Game Over" width="300"/>
 
 ## Technologies Used
 
