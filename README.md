@@ -5,7 +5,7 @@ A simple React Native app where your phone tries to guess the number you are thi
 ## Features
 
 - Random number generation
-- User input for guesses
+- User sets a secret number for the phone to guess
 - Feedback on guesses (higher/lower)
 - Game reset functionality
 
@@ -26,14 +26,12 @@ A simple React Native app where your phone tries to guess the number you are thi
 
 ## Screenshots
 
-_Add screenshots here if available._
+![Start Screen](./assets/screenshots/Screenshot_start.png)
+![Game Screen](./assets/screenshots/Screenshot_game.png)
+![GameOver](./assets/screenshots/Screenshot_game_over.png)
 
 ## Technologies Used
 
 - React Native
 - Expo
 - TypeScript
-
-## License
-
-This project is licensed under the MIT License.
