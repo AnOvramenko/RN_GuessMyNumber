@@ -1,4 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
+import {
+  Dimensions,
+  StyleSheet,
+  Text,
+  useWindowDimensions,
+  View,
+} from "react-native";
 import React from "react";
 import { Colors } from "../../shared/tokens";
 
@@ -6,8 +12,13 @@ interface CardProps {
   children: React.ReactNode;
 }
 
+// const deviceWidth = Dimensions.get('window').width;
+
 const Card = ({ children }: CardProps) => {
-  return <View style={styles.cardContainer}>{children}</View>;
+  const { height } = useWindowDimensions();
+  const marginTop = height < 420 ? 12 : 24;
+
+  return <View style={[styles.cardContainer, { marginTop }]}>{children}</View>;
 };
 
 export default Card;
@@ -16,7 +27,7 @@ const styles = StyleSheet.create({
   cardContainer: {
     alignItems: "center",
     padding: 16,
-    marginTop: 24,
+    // marginTop: deviceWidth < 400 ? 12 : 24,
     marginHorizontal: 16,
 
     borderRadius: 8,
